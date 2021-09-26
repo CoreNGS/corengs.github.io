@@ -1,0 +1,37 @@
+*.brand{
+    color: #f1606d;
+    font-weight: 900;
+}
+
+a.brand-button{
+    color: #831843;
+    background-color: #f1606d;
+    font-weight: 900;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    border-radius: .25rem;
+}
+
+code.dir{
+    color: white;
+    background-color: teal;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    border-radius: .25rem;
+}
+
+code.ft{
+    color: white;
+    background-color: darkred;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    border-radius: .25rem;
+}

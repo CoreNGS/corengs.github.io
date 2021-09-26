@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CoreNGS | About</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="main.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/eb07830743.js" crossorigin="anonymous"></script>
+        <link href="logo.png" rel="icon">
+    </head>
+    <body class="overflow-x-hidden">
+        <!-- Navigation -->
+        <nav class="w-screen bg-pink-900 px-5 py-2 justify-center">
+            <section class="flex justify-center items-center ">
+                <!-- brand -->
+                <a href="" class="flex justify-center items-center my-2">
+                    <img class="w-10 mr-5" src="logo.png">
+                    <p class="brand align-middle text-xl">CoreNGS</p>
+                </a>
+            </section>
+            <section class="flex justify-center items-center brand">
+                <!-- links -->
+                <a class="brand-button" href="about">About</a>
+                <a class="brand-button" href="downloads">Downloads</a>
+                <a class="brand-button" href="brand">Brand</a>
+                <a class="brand-button" href="people">Our Team</a>
+            </section>
+        </nav>
+
+        <!-- Overview -->
+        <section>
+            <article class="px-16 py-5">
+                <h1 class="font-bold text-2xl text-center pb-5">About CoreNGS</h1>
+                <p><span class="mx-5"></span>The CoreNGS Project is named after it being the core of a new generation of software. NGS as an acronym officially has three meanings: New/Next Generation Software, Nominally Generalized Software, and Normal and Generic Software. The goal of the project is to be a starting point for other systems to build off of, an enterprise base platform to inspire innovation in areas most operating systems developers tend to ignore, or generally failed at. Here is the list of failures: 
+                    <ul class="mx-20 list-disc">
+                        <li><span class="mx-5"></span>The first major failure is command-line dependence. Something CoreNGS is aiming to solve is the command-line dependence operating systems like Linux, *BSD, and Illumos commonly face yet ignore, which is the dependence on their CLI (command line interface). While many claim these systems don't have such dependency, you will be hardpressed to find any system without a terminal emulator, and if they don't it often causes major issues. CoreNGS aims to build standardized application APIs that don't rely on CLI, and no system based on CoreNGS feel like they need to have a terminal emulation tool.</li>
+                        <li><span class="mx-5"></span>The second major failure of these systems is the brand-factor, as in "how easy is it to brand my operating system"? While it can be easy for some, our goal is to make branding an integral part of distribution development, from bootloader to the desktop environments. The easier it is to brand yourself, the better your operating system will survive.</li>
+                        <li><span class="mx-5"></span>The third major failure is licensing. While not all open-source operating systems have to deal with it, many do. GPL is a failure, proving the arrogance and totalitarian nature of how they treat "freedom" with software. We aim to only use licenses that don't hurt our users and developers, even if it means we have to reinvent the wheel to get past idiotic licensing rules.</li>
+                        <li><span class="mx-5"></span>The fourth major failure is the human-unfriendly design. Software can best understand the difference between <code class="dir">/usr</code> and <code class="dir">/etc</code>, most people wouldn't understand it. Other examples are package managers. What new user immediately understands the difference between a normal package (like <code class="ft">.deb</code>) versus a Flatpak or AppImage? We aim to build in API's (not tools like Systemd) to CoreNGS as to give developers ability to manage their software and the operating system in unision, and make it so that the core of the system they want to make is stable, for them to focus on making the solutions that brought them to making these systems in the first place.</li>
+                        <li><span class="mx-5"></span>The fifth major failure is that we have to exist. CoreNGS was created for the same reason any other <a class="brand" href="https://foundation.potabi.com">Potabi Foundation</a> project, frustration, anger, and the feeling of no one being able to help with something that fundementally broke something else. CoreNGS was built as the long-term core of the <a class="brand" href="https://potabi.com">Potabi Systems Project</a>. Our project exists to fix fundementally broken parts of the operating systems market, things that make innovation difficult, competition impossible. While yes, anyone can make an operating system, there are fundemental issues with every single attempt. CoreNGS is the solution to problems that shouldn't really exist.</li>
+                    </ul>
+                </p><br>
+                <p><span class="mx-5"></span>CoreNGS actually started development well after the start of our sister project <a class="brand" href="https://potabi.com">Potabi Systems</a>, but CoreNGS will be the basis that Potabi Systems uses to build the operating system. The name was actually one of many possible options, but CoreNGS just stuck the best. It is owned by the <a class="brand" href="https://foundation.potabi.com">Potabi Foundation</a>, and it is a project dedicated to finally fixing core issues many operating systems are too overdeveloped to properly implement.</p>
+                <p><span class="mx-5"></span>The timeline for CoreNGS is not yet set in stone, with how few resources our <a class="brand" href="people">development team</a> has ready to support it, but we promise to do our best.</p>
+                <p><span class="mx-5"></span>We can officially be contacted by email at <a class="brand" href="mailto:corengs@potabi.com">corengs@potabi.com</a>.</p>
+                <p><span class="mx-5"></span>For brand information, please go to our <a class="brand" href="brand">branding page</a> for more information on how to use the CoreNGS brand in your project.</p>
+            </article>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-white bg-gray-900 py-5 px-2 flex items-center justify-between">
+            <p>&copy; The Potabi Foundation;</p>
+            <p>
+                <a href="https://github.com/CoreNGS" class="px-2"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/CoreNGSProject" class="px-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://discord.gg/8s8nNwndtF" class="px-2"><i class="fab fa-discord"></i></a>
+            </p>
+        </footer>
+    </body>
+</html>
