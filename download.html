@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CoreNGS</title>
+        <title>CoreNGS | Download</title>
         <link rel="icon" href="images/corengs.icon.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
@@ -62,31 +62,67 @@
         </nav>
 
         <!-- Banner -->
-        <section class="section is-medium banner-image">
+        <section class="section is-small banner-image">
             <div class="columns">
                 <div class="column is-5">
                     <div class="card-header has-background-info px-5 py-2">
-                        <h1 class="title has-text-white flex-1">Welcome to CoreNGS</h1>
+                        <h1 class="title has-text-white flex-1">Download CoreNGS</h1>
                     </div>
                     <div class="card-content has-background-white px-5 px-2">
-                        <p class="mb-4">Nucleus General Systems is a UNIX-based family of operating systems seperate from Berkley Software Distribution (BSD) and Illumos.</p>
-                        <section class="buttons">
-                            <a class="button is-primary" href="./download">Download</a>
-                            <a class="button is-primary is-outlined" href="./donate">Donate</a>
-                        </section>
+                        <p class="mb-4">Download CoreNGS</p>
+                        <div class="buttons">
+                            <a class="button is-danger" href="#latest">Download Current</a>
+                            <a class="button is-danger" href="#older">Older Downloads</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- News -->
-        <section class="section is-small bg-gray-200">
-            <h1 class="title is-3 has-text-centered">News</h1>
-            <div class="columns">
-                <div class="column card mx-5"><span id="cngs-news-one"></span></div>
-                <div class="column card mx-5"><span id="cngs-news-two"></span></div>
-                <div class="column card mx-5"><span id="cngs-news-three"></span></div>
-            </div>
+        <section class="section bg-gray-200">
+            <section id="latest" class="mb-10">
+                <h1 class="title is-3 has-text-centered">Latest Downloads</h1>
+                <section class="card">
+                    <div class="card-header has-background-info px-5 py-2">
+                        <h1 class="title  is-4 has-text-white flex-1">Download 1.0</h1>
+                    </div>
+                    <div class="card-content has-background-white px-5 px-2">
+                        <div class="columns">
+                            <div class="column">
+                                <h2 class="subtitle has-text-weight-bold">Installer Images</h2>
+                                <ul>
+                                    <li>amd64</li>
+                                    <li>aarch64</li>
+                                    <li>riscv64</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h2 class="subtitle has-text-weight-bold">SD Card Images</h2>
+                                <ul>
+                                    <li>
+                                        <strong>aarch64</strong>
+                                        <li><span class="mx-3"></span>PINEPHONE</li>
+                                        <li><span class="mx-3"></span>RASPBERRY PI (3/4)</li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h2 class="subtitle has-text-weight-bold">Release Documentation</h2>
+                                <ul>
+                                    <li>Released: TBA</li>
+                                    <li>Release Notes</li>
+                                    <li>README</li>
+                                    <li>Hardware Compatibility</li>
+                                    <li>Installation Guide</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="older">
+                <h1 class="title is-3 has-text-centered">Older Downloads</h1>
+                <p>coming soon</p>
+            </section>
         </section>
         <footer class="footer bg-blue-900">
             <p class="has-text-white">&copy; The Potabi Foundation;</p>

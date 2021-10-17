@@ -5,58 +5,86 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CoreNGS | About</title>
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link href="main.css" rel="stylesheet">
+        <link rel="icon" href="images/corengs.icon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <script src="bulma.js" defer></script>
+        <script src="articles.js" defer></script>
         <script src="https://kit.fontawesome.com/eb07830743.js" crossorigin="anonymous"></script>
-        <link href="logo.png" rel="icon">
     </head>
     <body class="overflow-x-hidden">
-        <!-- Navigation -->
-        <nav class="w-screen bg-pink-900 px-5 py-2 justify-center">
-            <section class="flex justify-center items-center ">
-                <!-- brand -->
-                <a href="https://corengs.github.io" class="flex justify-center items-center my-2">
-                    <img class="w-10 mr-5" src="logo.png">
-                    <p class="brand align-middle text-xl">CoreNGS</p>
+        <!-- Navigation Menu -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://corengs.one">
+                    <img src="./images/corengs.type.png" width="112" height="28">
                 </a>
-            </section>
-            <section class="flex justify-center items-center brand">
-                <!-- links -->
-                <a class="brand-button" href="about">About</a>
-                <a class="brand-button" href="downloads">Downloads</a>
-                <a class="brand-button" href="brand">Brand</a>
-                <a class="brand-button" href="people">Our Team</a>
-            </section>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navigation">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navigation" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="./about">About</a>
+                    <a class="navbar-item" href="https://docs.corengs.one/en/latest/" target="_blank">Documentation</a>
+                    
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">More</a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="./derivatives">Derivatives</a>
+                            <a class="navbar-item" href="./branding">Branding</a>
+                            <a class="navbar-item" href="./team">Team</a>
+                            
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="https://github.com/CoreNGS/corengs.github.io/issues" target="_blank">Report an issue</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <a class="navbar-item" href="https://discord.com/invite/8s8nNwndtF" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        <span class="ml-2 lg:hidden">Discord</span>
+                    </a>
+                    <a class="navbar-item" href="https://github.com/CoreNGS" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span class="ml-2 lg:hidden">GitHub</span>
+                    </a>
+                    <a class="navbar-item" href="https://twitter.com/CoreNGSProject" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <span class="ml-2 lg:hidden">Twitter</span>
+                    </a>
+                </div>
+            </div>
         </nav>
 
-        <!-- Overview -->
-        <section>
-            <article class="px-16 py-5">
-                <h1 class="font-bold text-2xl text-center pb-5">About CoreNGS</h1>
-                <p><span class="mx-5"></span>The CoreNGS Project is named after it being the core of a new generation of software. NGS as an acronym officially has three meanings: New/Next Generation Software, Nominally Generalized Software, and Normal and Generic Software. The goal of the project is to be a starting point for other systems to build off of, an enterprise base platform to inspire innovation in areas most operating systems developers tend to ignore, or generally failed at. Here is the list of failures: 
-                    <ul class="mx-20 list-disc">
-                        <li><span class="mx-5"></span>The first major failure is command-line dependence. Something CoreNGS is aiming to solve is the command-line dependence operating systems like Linux, *BSD, and Illumos commonly face yet ignore, which is the dependence on their CLI (command line interface). While many claim these systems don't have such dependency, you will be hardpressed to find any system without a terminal emulator, and if they don't it often causes major issues. CoreNGS aims to build standardized application APIs that don't rely on CLI, and no system based on CoreNGS feel like they need to have a terminal emulation tool.</li>
-                        <li><span class="mx-5"></span>The second major failure of these systems is the brand-factor, as in "how easy is it to brand my operating system"? While it can be easy for some, our goal is to make branding an integral part of distribution development, from bootloader to the desktop environments. The easier it is to brand yourself, the better your operating system will survive.</li>
-                        <li><span class="mx-5"></span>The third major failure is licensing. While not all open-source operating systems have to deal with it, many do. GPL is a failure, proving the arrogance and totalitarian nature of how they treat "freedom" with software. We aim to only use licenses that don't hurt our users and developers, even if it means we have to reinvent the wheel to get past idiotic licensing rules.</li>
-                        <li><span class="mx-5"></span>The fourth major failure is the human-unfriendly design. Software can best understand the difference between <code class="dir">/usr</code> and <code class="dir">/etc</code>, most people wouldn't understand it. Other examples are package managers. What new user immediately understands the difference between a normal package (like <code class="ft">.deb</code>) versus a Flatpak or AppImage? We aim to build in API's (not tools like Systemd) to CoreNGS as to give developers ability to manage their software and the operating system in unision, and make it so that the core of the system they want to make is stable, for them to focus on making the solutions that brought them to making these systems in the first place.</li>
-                        <li><span class="mx-5"></span>The fifth major failure is that we have to exist. CoreNGS was created for the same reason any other <a class="brand" href="https://foundation.potabi.com">Potabi Foundation</a> project, frustration, anger, and the feeling of no one being able to help with something that fundementally broke something else. CoreNGS was built as the long-term core of the <a class="brand" href="https://potabi.com">Potabi Systems Project</a>. Our project exists to fix fundementally broken parts of the operating systems market, things that make innovation difficult, competition impossible. While yes, anyone can make an operating system, there are fundemental issues with every single attempt. CoreNGS is the solution to problems that shouldn't really exist.</li>
-                    </ul>
-                </p><br>
-                <p><span class="mx-5"></span>CoreNGS actually started development well after the start of our sister project <a class="brand" href="https://potabi.com">Potabi Systems</a>, but CoreNGS will be the basis that Potabi Systems uses to build the operating system. The name was actually one of many possible options, but CoreNGS just stuck the best. It is owned by the <a class="brand" href="https://foundation.potabi.com">Potabi Foundation</a>, and it is a project dedicated to finally fixing core issues many operating systems are too overdeveloped to properly implement.</p>
-                <p><span class="mx-5"></span>The timeline for CoreNGS is not yet set in stone, with how few resources our <a class="brand" href="people">development team</a> has ready to support it, but we promise to do our best.</p>
-                <p><span class="mx-5"></span>We can officially be contacted by email at <a class="brand" href="mailto:corengs@potabi.com">corengs@potabi.com</a>.</p>
-                <p><span class="mx-5"></span>For brand information, please go to our <a class="brand" href="brand">branding page</a> for more information on how to use the CoreNGS brand in your project.</p>
-            </article>
+        <!-- Banner -->
+        <section class="section is-small banner-image">
+            <div class="columns">
+                <div class="column is-5">
+                    <div class="card-header has-background-info px-5 py-2">
+                        <h1 class="title has-text-white flex-1">About CoreNGS</h1>
+                    </div>
+                    <div class="card-content has-background-white px-5 px-2">
+                        <p>The goals, design, and intention of CoreNGS.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="text-white bg-gray-900 py-5 px-2 flex items-center justify-between">
-            <p>&copy; The Potabi Foundation;</p>
-            <p>
-                <a href="https://github.com/CoreNGS" class="px-2"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/CoreNGSProject" class="px-2"><i class="fab fa-twitter"></i></a>
-                <a href="https://discord.gg/8s8nNwndtF" class="px-2"><i class="fab fa-discord"></i></a>
-            </p>
+        <section class="bg-gray-200">
+            <article class="px-16 py-5">
+                <h1 class="font-bold text-2xl text-center pb-5">About CoreNGS</h1>
+                <p><span class="mx-5"></span>The CoreNGS Project is named by it being the core of Nucleus General Systems, a new family of operating of operating systems by design. CoreNGS is not designed to be a one-and-done game, an operating system with the impossible goals and eventual failures aiming for them. Often you can find literal thousands of Linux distributions, custom built operating systems, and forks of operating systems that could be anywhere between basically no changes and almost unidentical operating systems altogether. CoreNGS aims to fix the many failures of Linux and Unix.</p><br>
+                <p><span class="mx-5"></span>CoreNGS originally derived from FreeBSD 14.0, allowing our team to not focus on reinventing the wheel with a new kernel, userland code, etc. Instead, we can focus on modifying that userland, adding custom application programming interfaces and libraries to better manage the operating system, and letting you get your work done. We are remodeling and redefining Unix in a business-ready, user-friendly design that no other Linux or Unix-based system has done.</p><br>
+                <p><span class="mx-5"></span>CoreNGS aims to solve common aches and problems with using Unix-like systems, that every other operating system seems to ignore. Our journey just started, but we still have a long way to go.</p><br>
+            </article>
+        </section>
+        <footer class="footer bg-blue-900">
+            <p class="has-text-white">&copy; The Potabi Foundation;</p>
         </footer>
     </body>
 </html>
