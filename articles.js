@@ -7,9 +7,9 @@ const article = {
      */
     one: {
         title: "CoreNGS Rebranding Completion",
-        released: "October XX, 2021",
-        preview: "Not yet available",
-        link: "https://corengs.one"
+        released: "October 16, 2021",
+        preview: "We are excited to announce that we have done a complete overhaul of the brand! CoreNGS was looking unprofessional, and kind of like a five-year-old...",
+        link: "https://news.corengs.one/2021/10/corengs-rebranding-completion.html"
     },
     two: {
         title: "CoreNGS Domain Funded For Extra Year",
